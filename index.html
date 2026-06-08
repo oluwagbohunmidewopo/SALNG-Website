@@ -16,7 +16,7 @@
             </div>
             <div class="hb" style="color: white;">
                 <ul>
-                    <li class="list"><a href="E-commerce.html">Home</a></li>
+                    <li class="list"><a href="index.html">Home</a></li>
                     <li class="list"><a href="about.html">About</a></li>
                     <li class="list"><a href="project.html">Projects</a></li>
                     <li class="list"><a href="news.html">News</a></li>
@@ -27,123 +27,48 @@
                 <a href="#">Get Started</a>
             </div>
         </div>
-        <div class="slider">
-           <div class="slide active">
-            <img src="SALNG1.jpg">
-            <div class="caption">
-                <h1>Powering Nigeria's Industrial Growth With Clean, Reliable LNG</h1>
-                <p>Modular, scalable LNG solutions for Nigeria's industrial sector.</p>
-            </div>
-            </div>
-
-            <div class="slide">
-            <img src="SALNG2.jpg">
-            <div class="caption">
-                <h1>Gas Flaring Reduction</h1>
-                <p>We work with upstream producers to capture flared or stranded gas, convert it into LNG.</p>
-            </div>
-            </div>
-
-            <div class="slide">
-            <img src="SALNG3.jpeg">
-            <div class="caption">
-                <h1>Gas-To-Power Solution</h1>
-                <p>We support gas fired power generation by supplying LNG.</p>
-            </div>
-            </div>
-        </div>
-
-        <div class="dots">
-            <span class="dot active-dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-
-        <section class="mission-vision">
-            <div class="card">
-                <h2>Our Mission</h2>
-                <ul class="mission-list">
-                    <li>Deliver reliable virtual pipeline gas solutions.</li>
-                    <li>Enable gas-to-power for industrial and embedded generation.</li>
-                    <li>Reduce routine gas flaring through gas monetisation.</li>
-                    <li>Improve energy security and affordability.</li>
-                    <li>Support Nigeria's Decade of Gas initiative.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h2>Our Vision</h2>
-                <p>
-                To be a leading virtual pipeline LNG platform in West Africa, 
-                driving gas-to-power adoption and eliminating routine gas flaring.
-                </p>
-            </div>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Let's Discuss Business</p>
         </section>
-
-        <section class="stats">
-            <div class="stat">
-                <h2 class="count" data-target="100">0</h2>
-                <p>Years Combined Leadership</p>
-            </div>
-            <div class="stat">
-                <h2 class="count" data-target="10">0</h2>
-                <p>Years of Operation</p>
-            </div>
-            <div class="stat">
-                <h2 class="count" data-target="35">0</h2>
-                <p>Successful Projects</p>
-            </div>
-            <div class="stat">
-                <h2 class="count" data-target="50">0</h2>
-                <p>Happy Clients</p>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about-text">
-                <h2>About Us</h2>
+        <section class="contact-section">
+            <div class="office-info">
+                <h2>Lagos Office</h2>
                 <p>
-            South Atlantic LNG West Africa Limited (SA LNG) is a Nigerian energy infrastructure company
-            delivering small-scale LNG and virtual pipeline solutions that unlock natural gas for gas-to-power,
-            industrial, and commercial applications across Nigeria and West Africa.
+                Plot X, Block X,<br>
+                2nd Floor, Alfred Rewani, Falomo<br>
+                Ikoyi, Lagos, Nigeria
                 </p>
-                <p>
-            By converting natural gas into LNG, we enable reliable energy supply to customers without pipeline access,
-            while supporting gas flaring reduction, lower emissions, and sustainable economic growth.
-                </p>
-                <a href="#" class="more-link">More About Us →</a>
+                <h2>Get in Touch</h2>
+                <p><strong>Phone:</strong> +234 906 390 5573</p>
+                <p><strong>Email:</strong> info@southatlanticlng.com</p>
             </div>
-            <div class="about-image">
-                <img src="SALNG4.jpeg" alt="About SA LNG">
-            </div>
-        </section>
-
-        <section class="projects">
-            <h2 class="section-title">Our Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="div1.jpeg" alt="">
-                        <div class="overlay">
-                            <h3>5MMSCFD Phase 1 LNG Plant</h3>
-                        </div>
-                </div>
-                <div class="project-card">
-                    <img src="div2.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Secure Gas Supply</h3>
-                        </div>
-                </div>
-                <div class="project-card">
-                    <img src="div3.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Delta State Small-Scale LNG & Virtual Pipeline Project</h3>
-                        </div>
-                </div>
-                <div class="project-card">
-                    <img src="div4.jpeg" alt="">
-                        <div class="overlay">
-                            <h3>Modular Expansion to 20MMSCFD</h3>
-                        </div>
-                </div>
+            <div class="contact-form-container">
+                <form action="https://formsubmit.co/info@southatlanticlng.com" method="POST">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                >
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                >
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+                <button type="submit">SEND MESSAGE</button>
+                </form>
             </div>
         </section>
 
@@ -167,43 +92,5 @@
                 <img src="logo2.png" alt="Company Logo">
             </div>
         </section>
-
-
-<script>
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
-
-let current = 0;
-
-setInterval(() => {
-
-    slides[current].classList.remove("active");
-    dots[current].classList.remove("active-dot");
-
-    current = (current + 1) % slides.length;
-
-    slides[current].classList.add("active");
-    dots[current].classList.add("active-dot");
-
-}, 5000);
-
-const counters = document.querySelectorAll(".count");
-counters.forEach(counter => {
-    counter.innerText = "0";
-    const updateCount = () => {
-        const target = +counter.getAttribute("data-target");
-        const current = +counter.innerText;
-        const increment = Math.ceil(target / 100);
-        if (current < target) {
-            counter.innerText = current + increment;
-            setTimeout(updateCount, 20);
-        } else {
-            counter.innerText = target + "+";
-        }
-    };
-
-    updateCount();
-});
-</script>
     </body>
-    </html>
+</html>
