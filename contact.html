@@ -9,22 +9,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="logo.png">
     </head>
-    <body>
-        <div class="hd">
+    <div class="hd">
             <div class="hy">
                 <img src="logo2.png" alt="logo" style="height: 100px; width: 150px;">
             </div>
-            <div class="hb" style="color: white;">
+            <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+            </div>
+            <div class="hb" id="navMenu" style="color: white;">
                 <ul>
                     <li class="list"><a href="index.html">Home</a></li>
                     <li class="list"><a href="about.html">About</a></li>
                     <li class="list"><a href="project.html">Projects</a></li>
-                    <li class="list"><a href="news.html">News</a></li>
+                    <li class="list dropdown">
+                        <a href="#">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="small-scale-lng.html">Small-Scale LNG & Virtual Pipeline Solutions</a></li>
+                                <li><a href="gas-to-power.html">Gas-to-Power Solutions</a></li>
+                                <li><a href="gas-flaring-reduction.html">Gas Flaring Reduction</a></li>
+                                <li><a href="gas-monetisation.html">Gas Monetisation</a></li>
+                            </ul>
+                    </li>
                     <li class="list"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="he">
-                <a href="#">Get Started</a>
+                <a href="contact.html">Get Started</a>
             </div>
         </div>
         <section class="contact-hero">
@@ -91,6 +101,20 @@
             <div class="logo-box">
                 <img src="logo2.png" alt="Company Logo">
             </div>
+            <div class="footer-copyright">
+            © 2026 South Atlantic LNG West Africa Limited. All rights reserved.
+            </div>
         </section>
+        <script>
+            function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+            }
+            const links = document.querySelectorAll('.hb a');
+        links.forEach(link => {
+        if (link.href === window.location.href) {
+        link.classList.add('active');
+            }
+        });
+        </script>
     </body>
 </html>

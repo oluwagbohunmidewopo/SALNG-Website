@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ayoade E-commerce Project</title>
+        <title>South Atlantic LNG West Africa</title>
         <!--<link rel="icon" type="image/x-icon" href="favicon.jpg">-->
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,17 +14,28 @@
             <div class="hy">
                 <img src="logo2.png" alt="logo" style="height: 100px; width: 150px;">
             </div>
-            <div class="hb" style="color: white;">
+            <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+            </div>
+            <div class="hb" id="navMenu" style="color: white;">
                 <ul>
                     <li class="list"><a href="index.html">Home</a></li>
                     <li class="list"><a href="about.html">About</a></li>
                     <li class="list"><a href="project.html">Projects</a></li>
-                    <li class="list"><a href="news.html">News</a></li>
+                    <li class="list dropdown">
+                        <a href="#">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="small-scale-lng.html">Small-Scale LNG & Virtual Pipeline Solutions</a></li>
+                                <li><a href="gas-to-power.html">Gas-to-Power Solutions</a></li>
+                                <li><a href="gas-flaring-reduction.html">Gas Flaring Reduction</a></li>
+                                <li><a href="gas-monetisation.html">Gas Monetisation</a></li>
+                            </ul>
+                    </li>
                     <li class="list"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="he">
-                <a href="#">Get Started</a>
+                <a href="contact.html">Get Started</a>
             </div>
         </div>
         <section class="project-hero">
@@ -32,6 +43,164 @@
                 <h1>Our Projects</h1>
                 <p>Explore Our Projects: Witness the Evolution of Energy and Power</p>
             </div>
-</section>
+        </section>
+        <section class="project-intro">
+            <div class="project-intro-content">
+                <p>
+                Since our inception, South Atlantic LNG has been dedicated to unlocking
+                the potential of natural gas through innovative LNG and virtual pipeline
+                solutions. Our projects are designed to bridge energy gaps, support
+                industrial growth, and promote cleaner energy alternatives. Explore our
+                portfolio and see how we are helping shape a more sustainable and
+                energy-secure future across the region.
+                </p>
+            </div>
+        </section>
+        <section class="project-tabs-section">
+            <div class="project-tabs">
+                <button class="tab-btn active" onclick="showTab('midstream')">
+                Midstream
+                </button>
+                <button class="tab-btn" onclick="showTab('upstream')">
+                Upstream
+                </button>
+            </div>
+        <!-- MIDSTREAM -->
+            <div id="midstream" class="tab-content active">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="LNGTruck.png" alt="Mini LNG Plant">
+                    </div>
+                    <div class="project-details">
+                        <h2>20 MMSCFD Mini-LNG Project</h2>
+                        <p>
+                        <strong>Project Owner:</strong>
+                        South Atlantic LNG West Africa Limited
+                        </p>
+                        <p>
+                        <strong>Project:</strong>
+                        2-phase development of 20 MMSCFD Mini-Liquefied Natural Gas Facility in Delta State.
+                        </p>
+                        <p>
+                        <strong>Role:</strong>
+                        Project Development
+                        </p>
+                        <p>
+                        <strong>Location:</strong>
+                        Delta State, Nigeria
+                        </p>
+                        <p>
+                        <strong>Current Status:</strong>
+                        Ongoing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <!-- UPSTREAM -->
+            <div id="upstream" class="tab-content">
+                <div class="project-card">
+                    <div class="project-details">
+                        <h2>Upstream Projects</h2>
+                        <p>
+                        Information on upstream projects will be updated soon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="expert-network">
+            <div class="container">
+                <h2>Our Expert Network</h2>
+                <p>
+                We collaborate with a diverse network of industry experts,
+                engineering specialists, and energy professionals who support
+                the successful delivery of our projects.
+                </p>
+                <div class="logo-slider">
+                    <div class="logo-track">
+                    <!-- First Set -->
+                        <div class="logo-item">
+                            <img src="G-Elias.png" alt="Company 1">
+                            <h4>G-Elias</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="ILF.jpg" alt="Company 2">
+                            <h4>ILF</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="PCClogo.jpg" alt="Company 3">
+                            <h4>Peiyang Chemical Equipment Corporation (PCC)</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="3FCapital.png" alt="Company 4">
+                            <h4>3F Capital</h4>
+                        </div>
+                        <!-- Duplicate Set for Infinite Loop -->
+                        <div class="logo-item">
+                            <img src="G-Elias.png" alt="Company 1">
+                            <h4>G-Elias</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="ILF.jpg" alt="Company 2">
+                            <h4>ILF</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="PCClogo.jpg" alt="Company 3">
+                            <h4>Peiyang Chemical Equipment Corporation (PCC)</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="3FCapital.png" alt="Company 4">
+                            <h4>3F Capital</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-footer">
+            <div class="left-side">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    <strong>Corporate Office:</strong><br>
+                    Plot X, Block X,<br>
+                    2nd Floor, Alfred Rewani, Falomo<br>
+                    Ikoyi, Lagos, Nigeria
+                </p>
+                <p>
+                    <strong>Phone:</strong> +234 906 390 5573<br>
+                    <strong>Email:</strong> info@southatlanticlng.com
+                </p>
+            </div>
+            </div>
+            <div class="logo-box">
+                <img src="logo2.png" alt="Company Logo">
+            </div>
+            <div class="footer-copyright">
+            © 2026 South Atlantic LNG West Africa Limited. All rights reserved.
+            </div>
+        </section>
+        <script>
+            function showTab(tabId){
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => {
+            tab.classList.remove('active');
+            });
+            buttons.forEach(btn => {
+            btn.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+            }
+            function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+            }
+            const links = document.querySelectorAll('.hb a');
+            links.forEach(link => {
+            if (link.href === window.location.href) {
+            link.classList.add('active');
+            }
+            });
+        </script>
     </body>
 </html>
