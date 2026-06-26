@@ -6,6 +6,7 @@
         <title>South Atlantic LNG West Africa</title>
         <!--<link rel="icon" type="image/x-icon" href="favicon.jpg">-->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="logo.png">
     </head>
@@ -20,8 +21,8 @@
             <div class="hb" id="navMenu" style="color: white;">
                 <ul>
                     <li class="list"><a href="index.html">Home</a></li>
-                    <li class="list"><a href="about.html">About</a></li>
-                    <li class="list"><a href="project.html">Projects</a></li>
+                    <li class="list"><a href="about.html">About Us</a></li>
+                    <!-- <li class="list"><a href="project.html">Projects</a></li> -->
                     <li class="list dropdown">
                         <a href="#">Services</a>
                             <ul class="dropdown-menu">
@@ -35,9 +36,10 @@
                 </ul>
             </div>
             <div class="he">
-                <a href="contact.html">Get Started</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
+        <!--
         <div class="slider">
            <div class="slide active">
             <img src="SALNG1.jpg">
@@ -63,6 +65,98 @@
             </div>
             </div>
         </div>
+        -->
+
+        <section class="hero">
+
+    <div class="slider">
+
+        <div class="slide active">
+            <img src="SALNG1.jpg">
+
+            <div class="hero-overlay"></div>
+
+            <div class="caption">
+                <span>South Atlantic LNG West Africa</span>
+
+                <h1>
+                    Powering Nigeria's Industrial Growth With Clean, Reliable LNG
+                </h1>
+
+                <p>
+                    Modular, scalable LNG infrastructure delivering cleaner,
+                    affordable energy across Nigeria and West Africa.
+                </p>
+
+                <div class="hero-btns">
+
+                    <a href="#about" class="btn-primary">
+                        Learn More
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <img src="SALNG2.jpg">
+
+            <div class="hero-overlay"></div>
+
+            <div class="caption">
+
+                <span>Cleaner Energy</span>
+
+                <h1>
+                    Reducing Gas Flaring Through LNG Solutions
+                </h1>
+
+                <p>
+                    Unlocking stranded gas resources while reducing emissions
+                    and creating sustainable energy opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <img src="Greenville.png">
+
+            <div class="hero-overlay"></div>
+
+            <div class="caption">
+
+                <span>Gas-To-Power</span>
+
+                <h1>
+                    Reliable LNG Supply For Industries & Power Plants
+                </h1>
+                <p>
+                    Supporting uninterrupted power generation through flexible,
+                    scalable LNG delivery.
+                </p>
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="progress-bar">
+            <span></span>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+        </div>
+    </div>
+</section>
+         
 
         <div class="dots">
             <span class="dot active-dot"></span>
@@ -72,7 +166,7 @@
 
         <section class="mission-vision">
             <div class="card">
-                <h2>Our Mission</h2>
+                <h2><i class="fa-solid fa-bullseye"></i> Our Mission</h2>
                 <ul class="mission-list">
                     <li>Deliver reliable virtual pipeline gas solutions.</li>
                     <li>Enable gas-to-power for industrial and embedded generation.</li>
@@ -82,7 +176,7 @@
                 </ul>
             </div>
             <div class="card">
-                <h2>Our Vision</h2>
+                <h2><i class="fa-solid fa-eye"></i> Our Vision</h2>
                 <p>
                 To be a leading virtual pipeline LNG platform in West Africa, 
                 driving gas-to-power adoption and eliminating routine gas flaring.
@@ -174,6 +268,19 @@
                 </p>
             </div>
             </div>
+
+            <div class="footer-links">
+        <h2>Quick Links</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="project.html">Projects</a></li> -->
+            <li><a href="small-scale-lng.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
             <div class="logo-box">
                 <img src="logo2.png" alt="Company Logo">
             </div>
@@ -184,23 +291,6 @@
 
 
 <script>
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
-
-let current = 0;
-
-setInterval(() => {
-
-    slides[current].classList.remove("active");
-    dots[current].classList.remove("active-dot");
-
-    current = (current + 1) % slides.length;
-
-    slides[current].classList.add("active");
-    dots[current].classList.add("active-dot");
-
-}, 5000);
-
 const counters = document.querySelectorAll(".count");
 counters.forEach(counter => {
     counter.innerText = "0";
@@ -227,6 +317,88 @@ counters.forEach(counter => {
         link.classList.add('active');
             }
         });
+
+
+
+        let lastScrollTop = 0;
+const navbar = document.querySelector(".hd");
+
+window.addEventListener("scroll", function () {
+
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.transform = "translateY(-100%)";
+    } else {
+        // Scrolling up
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+document.querySelectorAll(".about-text, .about-image").forEach(el=>{
+    observer.observe(el);
+});
+
+const slides=document.querySelectorAll(".slide");
+const next=document.querySelector(".next");
+const prev=document.querySelector(".prev");
+const dots = document.querySelectorAll(".dot");
+let current=0;
+
+function showSlide(index){
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active-dot"));
+    slides[index].classList.add("active");
+    dots[index].classList.add("active-dot");
+}
+
+next.onclick=()=>{
+current++;
+if(current>=slides.length){
+current=0;
+}
+showSlide(current);
+resetProgress();
+}
+prev.onclick=()=>{
+current--;
+if(current<0){
+current=slides.length-1;
+}
+showSlide(current);
+resetProgress();
+}
+function autoSlide(){
+current++;
+if(current>=slides.length){
+current=0;
+}
+showSlide(current);
+resetProgress();
+}
+let timer=setInterval(autoSlide,6000);
+function resetProgress(){
+const bar=document.querySelector(".progress-bar span");
+bar.style.animation='none';
+bar.offsetHeight;
+bar.style.animation='progress 6s linear infinite';
+clearInterval(timer);
+timer=setInterval(autoSlide,6000);
+}
 </script>
     </body>
     </html>

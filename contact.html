@@ -19,8 +19,8 @@
             <div class="hb" id="navMenu" style="color: white;">
                 <ul>
                     <li class="list"><a href="index.html">Home</a></li>
-                    <li class="list"><a href="about.html">About</a></li>
-                    <li class="list"><a href="project.html">Projects</a></li>
+                    <li class="list"><a href="about.html">About Us</a></li>
+                    <!-- <li class="list"><a href="project.html">Projects</a></li> -->
                     <li class="list dropdown">
                         <a href="#">Services</a>
                             <ul class="dropdown-menu">
@@ -34,7 +34,7 @@
                 </ul>
             </div>
             <div class="he">
-                <a href="contact.html">Get Started</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
         <section class="contact-hero">
@@ -98,6 +98,19 @@
                 </p>
             </div>
             </div>
+
+            <div class="footer-links">
+        <h2>Quick Links</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="project.html">Projects</a></li> -->
+            <li><a href="small-scale-lng.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
             <div class="logo-box">
                 <img src="logo2.png" alt="Company Logo">
             </div>
@@ -115,6 +128,27 @@
         link.classList.add('active');
             }
         });
+
+
+
+
+        let lastScrollTop = 0;
+const navbar = document.querySelector(".hd");
+
+window.addEventListener("scroll", function () {
+
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.transform = "translateY(-100%)";
+    } else {
+        // Scrolling up
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
         </script>
     </body>
 </html>

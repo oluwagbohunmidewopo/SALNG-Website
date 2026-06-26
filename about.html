@@ -6,6 +6,7 @@
         <title>South Atlantic LNG West Africa</title>
         <!--<link rel="icon" type="image/x-icon" href="favicon.jpg">-->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="logo.png">
     </head>
@@ -19,8 +20,8 @@
             <div class="hb" id="navMenu" style="color: white;">
                 <ul>
                     <li class="list"><a href="index.html">Home</a></li>
-                    <li class="list"><a href="about.html">About</a></li>
-                    <li class="list"><a href="project.html">Projects</a></li>
+                    <li class="list"><a href="about.html">About Us</a></li>
+                    <!-- <li class="list"><a href="project.html">Projects</a></li> -->
                     <li class="list dropdown">
                         <a href="#">Services</a>
                             <ul class="dropdown-menu">
@@ -34,7 +35,7 @@
                 </ul>
             </div>
             <div class="he">
-                <a href="contact.html">Get Started</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
         <section class="about-hero">
@@ -80,7 +81,7 @@
         </section>
         <section class="sustainability-section">
             <div class="info-card">
-                <h2>Why Virtual Pipeline LNG</h2>
+                <h2><i class="fas fa-industry"></i> Why Virtual Pipeline LNG</h2>
                 <ul>
                     <li>Brings gas to customers where pipelines do not exist</li>
                     <li>Faster deployment than conventional gas infrastructure</li>
@@ -90,7 +91,7 @@
                 </ul>
             </div>
             <div class="info-card">
-                <h2>Gas Flaring Reduction & Sustainability</h2>
+                <h2><i class="fas fa-leaf"></i> Gas Flaring Reduction</h2>
                 <p>
                 Routine gas flaring represents both an environmental challenge
                 and a lost economic opportunity.
@@ -105,9 +106,112 @@
                 </ul>
             </div>
         </section>
+
+        <!--start of about us in project-->
+        <section class="project-tabs-section">
+            <div class="project-tabs">
+                <button class="tab-btn active" onclick="showTab('midstream')">
+                Midstream
+                </button>
+                <button class="tab-btn" onclick="showTab('upstream')">
+                Upstream
+                </button>
+            </div>
+        <!-- MIDSTREAM -->
+            <div id="midstream" class="tab-content active">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="LNGTruck.png" alt="Mini LNG Plant">
+                    </div>
+                    <div class="project-details">
+                        <h2>20 MMSCFD Mini-LNG Project</h2>
+                        <p>
+                        <strong>Project Owner:</strong>
+                        South Atlantic LNG West Africa Limited
+                        </p>
+                        <p>
+                        <strong>Project:</strong>
+                        2-phase development of 20 MMSCFD Mini-Liquefied Natural Gas Facility in Delta State.
+                        </p>
+                        <p>
+                        <strong>Role:</strong>
+                        Project Development
+                        </p>
+                        <p>
+                        <strong>Location:</strong>
+                        Delta State, Nigeria
+                        </p>
+                        <p>
+                        <strong>Current Status:</strong>
+                        Ongoing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <!-- UPSTREAM -->
+            <div id="upstream" class="tab-content">
+                <div class="project-card">
+                    <div class="project-details">
+                        <h2>Upstream Projects</h2>
+                        <p>
+                        Information on upstream projects will be updated soon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="expert-network">
+            <div class="container">
+                <h2>Our Expert Network</h2>
+                <p>
+                We collaborate with a diverse network of industry experts,
+                engineering specialists, and energy professionals who support
+                the successful delivery of our projects.
+                </p>
+                <div class="logo-slider">
+                    <div class="logo-track">
+                    <!-- First Set -->
+                        <div class="logo-item">
+                            <img src="G-Elias.png" alt="Company 1">
+                            <h4>G-Elias</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="ILF.jpg" alt="Company 2">
+                            <h4>ILF</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="PCClogo.jpg" alt="Company 3">
+                            <h4>Peiyang Chemical Equipment Corporation (PCC)</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="3FCapital.png" alt="Company 4">
+                            <h4>3F Capital</h4>
+                        </div>
+                        <!-- Duplicate Set for Infinite Loop -->
+                        <div class="logo-item">
+                            <img src="G-Elias.png" alt="Company 1">
+                            <h4>G-Elias</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="ILF.jpg" alt="Company 2">
+                            <h4>ILF</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="PCClogo.jpg" alt="Company 3">
+                            <h4>Peiyang Chemical Equipment Corporation (PCC)</h4>
+                        </div>
+                        <div class="logo-item">
+                            <img src="3FCapital.png" alt="Company 4">
+                            <h4>3F Capital</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="cta-section">
             <div class="cta-overlay">
-                <h2>Ready to Get Started?</h2>
+                <h2>Ready to Contact Us?</h2>
                 <p>
                 For virtual pipeline, gas-to-power, or gas flaring reduction enquiries,
                 please contact us.
@@ -117,6 +221,7 @@
                 </a>
             </div>
         </section>
+
          <section class="contact-footer">
             <div class="left-side">
             <div class="contact-info">
@@ -133,6 +238,19 @@
                 </p>
             </div>
             </div>
+
+            <div class="footer-links">
+        <h2>Quick Links</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="project.html">Projects</a></li> -->
+            <li><a href="small-scale-lng.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+            </div>
+
             <div class="logo-box">
                 <img src="logo2.png" alt="Company Logo">
             </div>
@@ -167,6 +285,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+});
+
+function showTab(tabId){
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => {
+            tab.classList.remove('active');
+            });
+            buttons.forEach(btn => {
+            btn.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+            };
+
+
+
+let lastScrollTop = 0;
+const navbar = document.querySelector(".hd");
+
+window.addEventListener("scroll", function () {
+
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.transform = "translateY(-100%)";
+    } else {
+        // Scrolling up
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 </script>
     </body>
