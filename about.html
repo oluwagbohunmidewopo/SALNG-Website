@@ -123,8 +123,8 @@
                 <h2>Contact Information</h2>
                 <p>
                     <strong>Corporate Office:</strong><br>
-                    Plot X, Block X,<br>
-                    2nd Floor, Alfred Rewani, Falomo<br>
+                    No 7, Alfred Rewane, Falomo<br>
+                    Behind Polaris Bank, 2nd Floor,<br>
                     Ikoyi, Lagos, Nigeria
                 </p>
                 <p>
@@ -141,15 +141,33 @@
             </div>
         </section>
     <script>
-        function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("active");
-        }
-        const links = document.querySelectorAll('.hb a');
-        links.forEach(link => {
-        if (link.href === window.location.href) {
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+
+const links = document.querySelectorAll('.hb a');
+links.forEach(link => {
+    if (link.href === window.location.href) {
         link.classList.add('active');
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".dropdown > a").forEach(serviceLink => {
+
+        serviceLink.addEventListener("click", function(e) {
+
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.parentElement.classList.toggle("active");
             }
+
         });
+
+    });
+
+});
 </script>
     </body>
 </html>

@@ -497,13 +497,13 @@ html{
     .hb.active {
         display: block;
     }
-    .hb ul {
+    .hb > ul {
         display: flex;
         flex-direction: column;
         padding: 0;
         margin: 0;
     }
-    .hb li {
+    .hb > ul > li {
         display: block;
         text-align: center;
         padding: 15px 0;
@@ -515,12 +515,7 @@ html{
     .he {
         display: none;
     }
-    .dropdown-menu {
-        position: static;
-        display: block;
-        background: transparent;
-        box-shadow: none;
-    }
+    
     .dropdown-menu li a {
         color: white;
         font-size: 15px;
@@ -529,7 +524,38 @@ html{
     .dots{
         display: none;
     }
+
+    
+
+    .dropdown.active > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        background: #001b44;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .dropdown-menu li {
+    padding: 8px 0;
+    }
+    .dropdown-menu a {
+    color: white;
+    }
 }
+
+/**Desktop only to recognise hover and phone**/
+@media (hover: hover) and (pointer: fine) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+
+
 
 
 
