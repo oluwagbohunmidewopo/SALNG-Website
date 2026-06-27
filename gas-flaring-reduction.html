@@ -72,6 +72,7 @@
                 Get In Touch
                 </a>
             </div>
+        </section>
         <section class="contact-footer">
             <div class="left-side">
             <div class="contact-info">
@@ -112,6 +113,14 @@
             function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("active");
             }
+            const menu = document.getElementById("navMenu");
+        const menuToggle = document.querySelector(".menu-toggle");
+        document.addEventListener("click", function(e) {
+    // If the click is outside the menu and hamburger button
+        if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menu.classList.remove("active");
+        }
+        });
             const links = document.querySelectorAll('.hb a');
         links.forEach(link => {
         if (link.href === window.location.href) {

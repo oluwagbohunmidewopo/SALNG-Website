@@ -8,7 +8,7 @@ html{
 }
 body{
     padding-top: 0;
-}
+    }
 .hd{
     margin-top: 0;
     background-color: #08306b;
@@ -667,10 +667,11 @@ opacity:0;
 /**Mobile Responsiveness**/
 @media screen and (max-width: 768px){
     .hd{
-        flex-direction: column;
-        height: auto;
-        padding: 15px;
-        gap: 15px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 20px;
+        height:80px;
     }
     .hy{
         margin-left: 0;
@@ -690,22 +691,49 @@ opacity:0;
     .he a{
         font-size: 18px;
     }
-    .slider{
-        height: 350px;
+    .hero, .slider{
+        height: 100vh;
+        min-height: 650px;
     }
     .caption{
-        left: 5%;
-        right: 5%;
+        left: 20px;
+        right: 20px;
+        top: 55%;
+        transform: translateY(-50%);
+        max-width: 100%;
     }
     .caption h1{
-        font-size: 30px;
+        font-size: 2 rem;
+        line-height: 1.2;
     }
     .caption p{
-        font-size: 14px;
+        font-size: 1 rem;
+        line-height: 1.6;
+    }
+    .slide img{
+        object-fit:cover;
+        object-position:center;
+    }
+    .slide:nth-child(3) img{
+        object-position: 25% center;
+    }
+    .scroll-down{
+        display:none;
     }
     .mission-vision{
         flex-direction: column;
         padding: 40px 5%;
+    }
+    .hero-btns{
+        flex-direction:column;
+        gap:15px;
+    }
+    .hero-btns a{
+        width:100%;
+        text-align:center;
+    }
+    .prev, .next{
+        display:none;
     }
     .card{
         width: 100%;
@@ -738,13 +766,38 @@ opacity:0;
         font-size: 30px;
     }
     .contact-footer{
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 50px 5%;
+        align-items: flex-start;
+        text-align: left;
+        padding: 50px 25px;
+        gap: 30px;
     }
-    .left-side{
+    .left-side,
+    .footer-links,
+    .logo-box{
         width: 100%;
-        align-items: center;
+    }
+    .contact-info,
+    .footer-links{
+        text-align: left;
+    }
+    .footer-links ul{
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .footer-links li{
+        margin-bottom: 10px;
+    }
+    .logo-box{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-copyright{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
     .project-box img{
         max-width: 100%;
@@ -752,13 +805,6 @@ opacity:0;
     .logo-box img{
         width: 140px;
     }
-    .hd {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
     .hy img {
         width: 120px !important;
         height: 80px !important;
@@ -845,7 +891,7 @@ opacity:0;
     background-color: #1E4E8C;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px 50px;
 }
 .contact-hero h1{
     font-size: 48px;
@@ -946,7 +992,7 @@ opacity:0;
 /**Mobile Responsiveness**/
 @media screen and (max-width: 768px){
     .contact-hero{
-        padding: 60px 20px;
+        padding: 150px 20px 70px;;
     }
     .contact-hero h1{
         font-size: 32px;
@@ -988,7 +1034,7 @@ opacity:0;
     background-color: #1E4E8C;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px 50px;
 }
 .about-hero-content{
     max-width: 1000px;
@@ -1204,7 +1250,12 @@ opacity:0;
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px){
     .about-hero{
-        padding: 60px 20px;
+        padding: 100px 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     .about-hero h1{
         font-size: 32px;
@@ -1445,16 +1496,32 @@ opacity:0;
         line-height: 1.7;
     }
     .project-card{
+        display:flex;
         flex-direction:column;
+        align-items:stretch;
+    }
+    .project-image{
+        width: 100%;
+    }
+    .project-image img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
     }
     .project-details{
-        padding:35px;
+        padding:25px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .project-details h2{
-        font-size:2rem;
+        font-size:1.8rem;
+        line-height: 1.3;
+        margin-bottom: 15px;
     }
     .project-details p{
-        font-size:1.05rem;
+        font-size:1rem;
+        line-height: 1.7;
     }
      .logo-item {
         width: 50%;
@@ -1469,9 +1536,19 @@ opacity:0;
         font-size: 15px;
         padding: 0 20px;
     }
+     .logo-item {
+        width: 180px;
+    }
+    .logo-item img {
+        width: 90px;
+        height: 90px;
+    }
+    .logo-track {
+        animation: scroll 15s linear infinite;
+    }
 }
 
-/* Mobile */
+/* Mobile *//*
 @media (max-width: 480px) {
     .project-hero {
         padding: 60px 15px;
@@ -1491,7 +1568,7 @@ opacity:0;
         font-size: 1rem;
         line-height: 1.6;
     }
-      .project-tabs{
+    .project-tabs{
         gap:25px;
     }
     .tab-btn{
@@ -1506,6 +1583,7 @@ opacity:0;
     .project-details p{
         font-size:1rem;
     }
+    
      .logo-item {
         width: 180px;
     }
@@ -1519,11 +1597,12 @@ opacity:0;
         animation: scroll 15s linear infinite;
     }
 }
+    */
 
 /* Services Css */
 .service-hero{
     background-color: #1E4E8C; 
-    padding: 80px 20px;
+    padding: 100px 20px 50px;
     text-align: center;
 }
 .service-hero-content h1{
